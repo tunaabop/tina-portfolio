@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tina Wang's Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script>
+        class ProjectContent extends HTMLElement {}
+        customElements.define('project-content', ProjectContent, {extends:'div'})
+
+        class ProjectTitle extends HTMLElement {}
+        customElements.define('project-title', ProjectTitle, {extends:'div'})
+
+        class ProjectTools extends HTMLElement {}
+        customElements.define('project-tools', ProjectTools, {extends:'div'})
+
+        class ProjectVisual extends HTMLElement {}
+        customElements.define('project-visual', ProjectVisual, {extends:'div'})
+
+    </script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="menu-lists">
+                <nav>
+                    <ul class="nbar" id="nbar">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#aboutme">about</a></li>
+                        <li><a href="#toolbox">toolbox &amp; skills</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <a class="close-menu" href="#"><img src="assets/img/closemenu.svg" alt="menu close"></a>
+                    </ul>
+                    <a class="hamburger-menu" href="#nbar"><img src="assets/img/menu.svg" alt="menu"></a>
+                </nav>
+            </div>
+            <h1>
+                Hello, my name is
+                <span class="title"> Tina Wang.</span>
+                I'm an aspiring
+                <span class="title">software engineer</span>  and...
+                <p class="text-rotations">
+                    <span class="text-rotate"> <code>lacrosse player</code></span>
+                    <span class="text-rotate"><code>pistoriophile</code></span>
+                    <span class="text-rotate"> <code>weightlifter</code></span>
+                    <span class="text-rotate"><code>home cook</code></span>
+                    <span class="text-rotate"><code>tea & coffee lover</code></span>
+                </p>
+            </h1>
+        </div>   
+       
+    </header>
+    <main>
+        <!-- TODO: About Me Section -->
+        <section class="aboutme" id="aboutme">
+            <div class="wrapper">
+                <h2>About Me</h2>
+                <h3>Who is Tina?</h3>
+            </div>       
+        </section>
+        <!-- <section class="toolbox" id="toolbox">
+            <div class="wrapper">
+                <h2>Toolbox</h2>
+                <h3> tools & skills </h3>
+                <p> Here are some of the tools I use and things I can do</p>
+                <div class="tool-icons">
+                    
+                </div>
+            </div>
+        </section>   -->
+        <!-- TODO for project section, add github/website links; incorporate icons -->
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <h2>Projects</h2>
+                <h3>Things I've Built</h3>
+                <!-- PROJECT 1-->
+                <div class="grid-lists">
+                    <project-content>
+                        <project-title>
+                            <h4>He11's Kitchen</h4>
+                            <p class="content-details">Cooking consists of preparing food through various different techniques
+                                and combining different foods and spices with a variety of kitchen tools
+                                depending on the dish, environment, and constraints. Software engineering
+                                is pretty similiar - He11's Kitchen's aim is to cook up tasty dishes. A
+                                group programming project with <a href="https://github.com/cse110-fa21-group11/cse110-sp21-group11/blob/main/admin/team.md">Team 11.</a> 
+                            </p>
+                        </project-title>
+                        <project-visual>
+                            <img src="assets/img/hellskitchen.jpg" alt="He11's Kitchen App">
+                        </project-visual>
+                        <project-tools>
+                            
+                        </project-tools>
+                    
+                    </project-content>
+                    <!-- PROJECT 2-->
+                    <project-content>
+                        <project-title>
+                            <h4>BamBOOK</h4>
+                            <p class="content-details">Our web application bamBOOK is a low-stress, daily learning environment for both children and adults
+                                with visual dyslexia. It allows users to practice reading and typing the sentence they hear and see
+                                on the screen, and through this process enhance their English reading and typing skills. A 
+                                <a href="">HackDuke Code for Good 2020</a> project with my friends!
+                            </p>
+                        </project-title>
+                        <project-visual>
+                            <img src="assets/img/bambook.jpg" alt="BamBOOK App">
+                        </project-visual>
+                        <project-tools>
+                            
+                        </project-tools>
+                    </project-content>
+                    <!-- PROJECT 3-->
+                    <project-content>
+                        <project-title>
+                            <h4>gitMovie</h4>
+                            <p><a href="https://cmadrid48.github.io/gitMovie/">gitMovie</a> is a movie picker, a front-end web app that allows users to search for movies and TV shows, view their details and ratings, and get recommendations for similar content. 
+                                The users can also view the history of previous movie searches.
+                            </p>
+                        </project-title>
+                        <project-visual>
+                            <img src="assets/img/gitmovie.png" alt="gitMovie, a movie picker app">
+                        </project-visual>
+                        <project-tools>
+                            
+                        </project-tools>
+                    </project-content>
+                    <!-- PROJECT 4-->
+                    <project-content>
+                        <project-title>
+                            <h4>COMING SOON</h4>
+                            <p>:)
+                            </p>
+                        </project-title>
+                        <project-visual>
+                        </project-visual>
+                        <project-tools>
+                            
+                        </project-tools>
+                    </project-content>
+                    <!-- PROJECT 5-->
+                    <project-content>
+                        <project-title>
+                            <h4>COMING SOON</h4>
+                            <p>:)
+                            </p>
+                        </project-title>
+                        <project-visual>
+                        </project-visual>
+                        <project-tools>
+                            
+                        </project-tools>
+                    </project-content>
+                    <!-- PROJECT 6-->
+                    <project-content>
+                        <project-title>
+                            <h4>COMING SOON</h4>
+                            <p>;)
+                            </p>
+                        </project-title>
+                        <project-visual>
+                        </project-visual>
+                        <project-tools>
+                            
+                        </project-tools>
+                    </project-content>
+                </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <h2>Contact</h2>
+            <h3>Send a message</h3>
+            <div class="content">
+            
+                  <!-- will add form api later -->
+                  <!-- TODO -->
+                  <!-- CSS formatting make more pleasant -->
+                <form id="form" name="contact-form" action=""" method="POST">
+                    <!-- <fieldset>
+                        <legend>Ask any questions, for my resume, or just say hi! I'd love to work together:)</legend>
+                        <div class="form-pair">
+                            <label for="subject">Subject<span class="required">*</span></label>
+                            <input type="text" name="subject" id="subject" placeholder="Enter subject here">
+                        </div>
+                        <div class="form-pair">
+                            <label for="name">Name<span class="required">*</span></label>
+                            <input type="text" name="name" id="name" placeholder="Enter name here">
+                        </div>
+                        <div class="form-pair">
+                            <label for="email">Email Address<span class="required">*</span></label>
+                            <input type="email" name="_replyto" id="email" placeholder="Enter email here">  
+                        </div>
+                        <div class="form-pair">
+                            <label for="message" class="message">Your Message<span class="required">*</span></label>
+                            <input type="text" name="message" id="message" placeholder="Hi hello!"></input>
+                        </div>
+                        <button type="submit">Send Message!</button>
+                    </fieldset> -->
+                    <p>Email: tinawang158@gmail.com</p>
+                    <p>Github: @tunaabop</p>
+                </form>
+            </div>
+        </div>         
+    </section>   
+    </main>
+    <footer>
+        <div class="wrapper">
+            <p><code>coded with html & &#128155 by <a href="https://github.com/tunaabop">Tina Wang</a></code> </p>
+        </div>
+	</footer>
+</body>
+</html>
